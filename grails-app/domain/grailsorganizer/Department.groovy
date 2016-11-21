@@ -9,5 +9,6 @@ class Department {
     Date dateUpdated
 
     static constraints = {
+        name(unique: true, blank: false)
     }
 }
