@@ -14,6 +14,9 @@ class Contact implements Serializable {
     Date dateCreated
     Date dateUpdated
 
+    static belongsTo = [Department]
+    static hasMany = [departments: Department]
+
     static constraints = {
         email(unique: true, email: true, blank: false)
         telephone(unique: true, blank: false)

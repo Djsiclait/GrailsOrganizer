@@ -1,6 +1,6 @@
 package grailsorganizer
 
-class User {
+class User implements Serializable {
 
     String username
     String firstName
@@ -9,6 +9,8 @@ class User {
     // Meta Attributes
     Date dateCreated
     Date dateUpdated
+
+    static belongsTo = [Department]
 
     static constraints = {
         username(unique: true, blank: false)
