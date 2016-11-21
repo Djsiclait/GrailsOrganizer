@@ -15,5 +15,10 @@ class Contact implements Serializable {
     Date dateUpdated
 
     static constraints = {
+        email(unique: true, email: true, blank: false)
+        telephone(unique: true, blank: false)
+        firstName(blank: false)
+        lastName(blank: false)
+        address(blank: false)
     }
 }
