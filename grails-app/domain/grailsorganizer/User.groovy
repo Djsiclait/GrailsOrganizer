@@ -14,5 +14,7 @@ class User {
         username(unique: true, blank: false)
         firstName(blank: false)
         lastName(blank: false)
+        dateCreated(Date: true)
+        dateUpdated(Date: true)
     }
 }

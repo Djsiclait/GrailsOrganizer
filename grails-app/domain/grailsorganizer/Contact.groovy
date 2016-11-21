@@ -20,5 +20,7 @@ class Contact implements Serializable {
         firstName(blank: false)
         lastName(blank: false)
         address(blank: false)
+        dateCreated(Date: true)
+        dateUpdated(Date: true)
     }
 }
