@@ -10,6 +10,10 @@ class Contact implements Serializable {
     String job
     String cellphone
 
+    // Meta Attributes
+    Date dateCreated
+    Date dateUpdated
+
     static constraints = {
     }
 }
