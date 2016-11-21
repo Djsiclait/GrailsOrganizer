@@ -3,7 +3,7 @@ package grailsorganizer
 class User {
 
     String username
-    String firtName
+    String firstName
     String lastName
 
     // Meta Attributes
@@ -11,5 +11,8 @@ class User {
     Date dateUpdated
 
     static constraints = {
+        username(unique: true, blank: false)
+        firstName(blank: false)
+        lastName(blank: false)
     }
 }
